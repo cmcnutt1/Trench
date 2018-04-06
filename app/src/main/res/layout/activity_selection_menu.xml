@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="shovel.trench.SelectionMenu">
+
+    <ImageButton
+        android:id="@+id/byArtistButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:adjustViewBounds="false"
+        app:srcCompat="@drawable/artisticon"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/byArtistButton"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="By Artist"
+        android:textAlignment="center"
+        android:textSize="30dip" />
+
+    <ImageButton
+        android:id="@+id/bySongButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="false"
+        app:srcCompat="@drawable/songicon"
+        android:layout_marginTop="26dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignStart="@+id/byArtistButton" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="By Song"
+        android:textAlignment="center"
+        android:textSize="30dip"
+        android:layout_below="@+id/bySongButton"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3" />
+
+    <ImageButton
+        android:id="@+id/byPlaylistButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="false"
+        app:srcCompat="@drawable/playlisticon"
+        android:layout_below="@+id/textView4"
+        android:layout_alignStart="@+id/bySongButton"
+        android:layout_marginTop="23dp" />
+
+    <TextView
+        android:id="@+id/artistText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_below="@+id/byPlaylistButton"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="By Playlist"
+        android:textAlignment="center"
+        android:textSize="30dip" />
+
+
+
+
+</RelativeLayout>

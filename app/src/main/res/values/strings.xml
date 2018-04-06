@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Trench Proto</string>
+    <string name="errorMessageTooShort">Error: Group Name must be more than 4 letters long</string>
+    <string name="errorMessageUserAlreadySubbed">Error: You are already subscribed to this group</string>
+    <string name="createNewGroupMessage">There is no group by this name. Would you like to create it?</string>
+    <string name="ConnectButton">Log In</string>
+</resources>

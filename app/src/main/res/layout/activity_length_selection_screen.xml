@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="shovel.trench.LengthSelectionScreen">
+
+    <Button
+        android:id="@+id/largeSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20 Songs"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:layout_marginTop="98dp"
+        android:layout_below="@+id/mediumSelect"
+        android:layout_alignStart="@+id/mediumSelect" />
+
+    <Button
+        android:id="@+id/mediumSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10 Songs"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/shortSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5 Songs"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:layout_marginTop="47dp"
+        android:layout_below="@+id/lenSelectText"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/lenSelectText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Select iteration length"
+        android:textSize="30sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

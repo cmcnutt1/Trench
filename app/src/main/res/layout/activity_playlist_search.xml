@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="shovel.trench.ArtistSongSearch">
+
+    <ImageView
+        android:id="@+id/playlistLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/backgroundCircle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        app:srcCompat="@drawable/playlisticon"
+        tools:layout_editor_absoluteX="142dp"
+        tools:layout_editor_absoluteY="42dp" />
+
+    <ImageView
+        android:id="@+id/backgroundCircle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:visibility="visible"
+        app:srcCompat="@drawable/circle_bg"
+        tools:layout_editor_absoluteX="142dp"
+        tools:layout_editor_absoluteY="87dp" />
+
+    <TextView
+        android:id="@+id/playlistsIconLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Playlists"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="156dp"
+        tools:layout_editor_absoluteY="151dp"
+        android:layout_below="@+id/playlistLogo"
+        android:layout_centerHorizontal="true" />
+
+    <ListView
+        android:id="@+id/playlistResults"
+        style="@style/Widget.AppCompat.ListView"
+        android:layout_width="368dp"
+        android:layout_height="340dp"
+        android:background="#777"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="286dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="14dp" />
+
+    <TextView
+        android:id="@+id/playlistError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You don't have any playlists"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        android:layout_above="@+id/playlistResults"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="7dp" />
+</RelativeLayout>
